@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> </meta>
+
+	<title>Random Qoute Generator</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+ 
+ <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"> <!--  qoute font  
+    font-family: 'Indie Flower', cursive; (for css)
+  --> 
+
+ <link href="https://fonts.googleapis.com/css?family=Bellefair|Indie+Flower" rel="stylesheet"> 
+<!--   font for the button   font-family: 'Bellefair', serif; (for css) --> 
+
+ <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet"> 
+<!-- font for the authors name --> 
+
+ <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet"> 
+<!-- final font for the button--> 
+
+</head>
+
+<body>
+
+<div class="all">
+
+
+
+	<header>
+
+	<h1>Random Qoute Generator</h1>
+
+
+	</header>
+
+	<div class="main">
+	
+		 <div class="button">   
+				<h3 id="clickMe">Click Me </h3> 
+		
+			
+		</div> 
+			
+
+			<div class="qoutebox"> 
+					
+				<p id = "qoute">Qoutes will appear here </p>
+				<p id ="author"> Author will appear here </p> 
+
+				<div  id = "twitter" class="pic-description">
+				
+				 <p > <a href="https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=" target="_blank"> Share on twitter </a> </p>
+
+				</div>
+
+			</div>
+
+	</div>
+
+</div> <!-- "all" ends here -->
+
+<footer>
+	
+<p>All rights reserved</p>
+
+</footer>
+
+
+
+<!--JAVASCRIPT CODE STARTS HERE --> 
+<script>
+	
+
+
+	$(document).ready(function() { // runs when all is loaded on the page. 
+
+		 $("#clickMe").on("click", function(){ // when clicking the button with id hello, start function. 
+		 	
+		var qoute = ""; 
+		var author  ="";
+		var twitter ="";
+	
+		 	$("#qoute").html(function(){
+		 		
+		 	switch (Math.floor(Math.random() * 10 + 1)){
+		 		case 1: 
+		 		qoute = "Do the right thing. It will gratify some people and astonish the rest.";
+		 		author =  $("#author").html("- Mark Twain"); 
+		 			
+		 			$("#twitter").on("click", function(){
+				twitter = $('#twitter').attr('href', 'https://twitter.com/intent/tweet?text='+ qoute).attr('target', '_blank');
+						return twitter; 
+						});
+		 		break; 
+
+
+
+		 		case 2: 
+		 		qoute ="Go confidently in the direction of your dreams.  Live the life you have imagined.";
+		 		author =  $("#author").html("- Henry David Thoreau");
+		 			$("#twitter").on("click", function(){
+				twitter = $('#twitter').attr('href', 'https://twitter.com/intent/tweet?text='+ qoute).attr('target', '_blank');
+						return twitter; 
+						});
+		 		break;
+
+		 		case 3: 
+		 		qoute = "The best revenge is massive success.";
+		 		author =  $("#author").html("- Frank Sinatra");
+		 			$("#twitter").on("click", function(){
+				twitter = $('#twitter').attr('href', 'https://twitter.com/intent/tweet?text='+ qoute).attr('target', '_blank');
+						return twitter; 
+						});
+		 		break;
+
+		 		case 4: 
+		 		qoute ="Believe you can and you’re halfway there.";
+		 		author =  $("#author").html("- Theodore Roosevelt");
+		 			$("#twitter").on("click", function(){
+				twitter = $('#twitter').attr('href', 'https://twitter.com/intent/tweet?text='+ qoute).attr('target', '_blank');
+						return twitter; 
+						});
+		 		break;
+
+		 		case 5: 
+		 		qoute ="Nothing is impossible, the word itself says, Im possible!";
+		 		author = $("#author").html("- Audrey Hephburn");
+		 			
+		 			$("#twitter").on("click", function(){
+				twitter = $('#twitter').attr('href', 'https://twitter.com/intent/tweet?text='+ qoute).attr('target', '_blank');
+						return twitter; 
+						});
+		 		break;
+		 		
+		 		case 6:
+		 			qoute = "You miss 100% of the shots you don’t take.";
+		 			author = $("#author").html("- Wayne Gretzky");
+				break;
+
+
+		 		case 7:
+		 			qoute = "Start where you are. Use what you have.  Do what you can.";
+		 			author = $("#author").html("- Arthur Ashe");
+
+				break;
+
+		 		case 8:
+		 		qoute = "If the wind will not serve, take to the oars.";
+		 		author = $("#author").html("- Latin Proverb");
+
+				break;
+		 		case 9:
+		 			qoute = "A person who never made a mistake never tried anything new.";
+		 			author = $("#author").html("- Albert Einstein");
+					break;
+
+		 		case 10:
+		 			qoute = "I didn’t fail the test. I just found 100 ways to do it wrong.";
+		 			author = $("#author").html("- Benjamin Franklin");
+		 		break;
+		 	}
+
+
+		 		return qoute; 
+		 		return author; 
+		 		return twitter; 
+
+
+		 	 }); 
+			
+		});
+
+		  
+	});
+
+
+
+</script>
+<!--JAVASCRIPT CODE ENDS HERE --> 
+
+
+
+
+</body>
+</html>

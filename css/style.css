@@ -1,0 +1,157 @@
+h1 {
+text-align: center;
+margin: 5px 5px 5px 5px;
+font-family: 'Indie Flower', cursive;
+font-size: 65px;
+padding:auto;
+text-shadow: 3px 3px rgb(48, 53, 61);
+color: rgb(74, 101, 145);
+}
+
+h1:hover{
+color: rgb(74, 101, 145);
+text-shadow: 2px 2px rgb(48, 53, 61);
+}
+
+
+header{
+	margin-top: 5%;
+}
+
+.all{
+background-image: url(images/mountain.jpg);
+
+}
+
+body{
+
+	
+	background-size: 100% 100%; 
+	background-repeat:no-repeat;
+	background-color: grey; 
+}
+
+
+.main {
+text-align: center;
+align-content: center;
+margin:auto;
+}
+
+
+
+.button {
+
+
+    font-family: 'Shadows Into Light', cursive;
+	border:2px solid black;
+	background-color: rgb(146, 183, 104);
+	height:60px;
+	width: 200px;
+	text-align: center;
+	margin:auto;
+	padding: 5px 5px 5px 5px;
+	box-shadow: 10px 10px 10px rgb(48, 53, 61);
+	border-radius:10px; 
+}
+
+.button:hover {
+    background-color: rgb(200, 209, 127);
+    box-shadow: 5px 5px 10px rgb(48, 53, 61);
+}
+
+.button:active {
+
+	box-shadow: 2px 2px 10px rgb(48, 53, 61);
+	  background-color: rgb(245, 249, 154);
+}
+
+.qoutebox{
+	margin:auto;
+	text-align: center;
+	background-color: white; 
+	border:2px solid black;
+	color: blue;
+	height:450px;
+	width: 400px;
+	margin-top: 2%;
+	margin-bottom: 5%; 
+	box-shadow: 10px 10px 10px rgb(48, 53, 61);
+	border-radius:5px; 
+}
+
+.qoutebox:hover{
+box-shadow: 5px 5px 5px rgb(48, 53, 61);
+	border:2px solid black;
+}
+
+	.qoutebox img{
+		height: 10%; 
+		width:10%;
+		margin:auto;
+		text-align:center;
+	}
+
+
+.pic-description{
+	background-color:rgb(74, 101, 145); 
+	border-radius: 5px; 
+	border:2px solid black;
+	height: auto;
+	width: 50%;
+	height:auto;
+	text-align:center;
+	margin:auto;
+	box-shadow: 5px 5px 5px rgb(48, 53, 61);
+	font-family: 'Shadows Into Light', cursive;
+	font-size: 26px;
+}
+
+.pic-description:hover{
+box-shadow: 2px 2px 5px rgb(48, 53, 61);
+}
+
+.pic-description:active{
+box-shadow: 2px 2px 5px rgb(48, 53, 61);
+opacity: 0.7;
+}
+
+#qoute{
+	font-family: 'Indie Flower', cursive;
+	font-size: 35px;
+		font-color: black;
+
+}
+
+#author{
+	font-family: 'Dancing Script', cursive;
+	font-size: 25px;
+	font-color: black;
+}
+
+footer{
+
+	margin:auto;
+	text-align: center;
+}
+
+h3{
+	text-align:center; 
+    font-family: 'Shadows Into Light', cursive;
+	margin-top: auto; 
+	margin-bottom: auto;
+	font-size: 40px; 
+	font-color: black;
+	padding-bottom:5%;
+
+}
+
+
+p {
+	color: black;
+}
+
+a {
+	text-decoration: none; 
+	color:black;
+}
